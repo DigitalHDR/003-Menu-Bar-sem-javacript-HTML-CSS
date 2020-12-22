@@ -10,14 +10,16 @@ body {
     font-family       : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*-------------------- Menu -------------------*/
+/*-------------------- Menu
+ -------------------*/
 nav {
     background        : #0082e6;
     height            : 80px;
     width             : 100%;
 }
 
-/*-------------------- Logo do menu -------------------*/
+/*-------------------- Logo do menu
+ -------------------*/
 label.logo {
     color             : white;
     font-size         : 35px;
@@ -26,7 +28,8 @@ label.logo {
     font-weight       : bold;
 }
 
-/*-------------------- Container ul -------------------*/
+/*-------------------- Container ul
+ -------------------*/
 nav ul {
     float             : right;
     margin-right      : 20px;
@@ -39,7 +42,8 @@ nav ul li {
     margin            : 0 5px;
 }
 
-/*-------------------- link do menu -------------------*/
+/*-------------------- link do menu
+ -------------------*/
 nav ul li a {
     color             : white;
     font-size         : 17px;
@@ -54,7 +58,8 @@ a.active, a:hover {
     transition        : .5s;
 }
 
-/*---------- icone menu bar ----------*/
+/*---------- icone menu bar
+ ----------*/
 .checkbtn { 
     font-size         : 30px;
     color             : white;
@@ -65,13 +70,15 @@ a.active, a:hover {
     display           : none;
 }
 
-/*---------- input checkbox ----------*/
+/*---------- input checkbox
+ ----------*/
 #check {
     display           : none;
 }
 
 
-/*-------------------- Responsivo 1 -------------------*/
+/*-------------------- Responsivo 1
+ -------------------*/
 @media (max-width: 900px) {
     /*-------------------- Logo do menu -------------------*/
     label.logo {
@@ -85,10 +92,12 @@ a.active, a:hover {
     }
 }
 
-/*-------------------- Responsivo 2 -------------------*/
+/*-------------------- Responsivo 2
+ -------------------*/
 
 @media (max-width: 791px) {
-    /*---------- icone menu bar ----------*/
+    /*---------- icone menu bar
+     ----------*/
     .checkbtn {
         display       : block;
     }
