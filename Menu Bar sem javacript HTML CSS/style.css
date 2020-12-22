@@ -1,0 +1,133 @@
+* {
+    padding           : 0;
+    margin            : 0;
+    text-decoration   : none;
+    list-style        : none;
+    box-sizing        : border-box;
+}
+
+body {
+    font-family       : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*-------------------- Menu -------------------*/
+nav {
+    background        : #0082e6;
+    height            : 80px;
+    width             : 100%;
+}
+
+/*-------------------- Logo do menu -------------------*/
+label.logo {
+    color             : white;
+    font-size         : 35px;
+    line-height       : 80px;
+    padding           : 0 100px;
+    font-weight       : bold;
+}
+
+/*-------------------- Container ul -------------------*/
+nav ul {
+    float             : right;
+    margin-right      : 20px;
+}
+
+/*-------------------- Container li do menu -------------------*/
+nav ul li {
+    display           : inline-block;
+    line-height       : 80px;
+    margin            : 0 5px;
+}
+
+/*-------------------- link do menu -------------------*/
+nav ul li a {
+    color             : white;
+    font-size         : 17px;
+    text-transform    : uppercase;
+    padding           : 7px 13px; /* aqui muda o espaço dentro dos menu link*/
+    border-radius     : 3px;
+}
+
+/*-------------------- Efeito do link do menu -------------------*/
+a.active, a:hover {
+    background        : #1b9bff;
+    transition        : .5s;
+}
+
+/*---------- icone menu bar ----------*/
+.checkbtn { 
+    font-size         : 30px;
+    color             : white;
+    float             : right;
+    line-height       : 80px;
+    margin-right      : 40px;
+    cursor            : pointer;
+    display           : none;
+}
+
+/*---------- input checkbox ----------*/
+#check {
+    display           : none;
+}
+
+
+/*-------------------- Responsivo 1 -------------------*/
+@media (max-width: 900px) {
+    /*-------------------- Logo do menu -------------------*/
+    label.logo {
+        font-size     : 30px;
+        padding-left  : 50px;
+    }
+
+    /*-------------------- link do menu -------------------*/
+    nav ul li a {
+        font-size     : 16px;
+    }
+}
+
+/*-------------------- Responsivo 2 -------------------*/
+
+@media (max-width: 791px) {
+    /*---------- icone menu bar ----------*/
+    .checkbtn {
+        display       : block;
+    }
+
+    /*-------------------- Container ul -------------------*/
+    ul {
+        position      : fixed;
+        width         : 100%;
+        height        : 100vh;
+        background    : #2c3e50;
+        top           : 80px;
+        /* right         : -109%; menu vindo da direita +A */
+        left          : -100%; /* menu vindo da esquerda +B */
+
+        text-align    : center;
+        transition    : all 1.0s;
+    }
+
+    /*-------------------- Container li do menu -------------------*/
+    nav ul li {
+        display       : block;
+        margin        : 50px 0;
+        line-height   : 30px;
+    }
+
+    /*-------------------- link do menu -------------------*/
+    nav ul li a {
+        font-size     : 20px;
+    }
+
+    /*-------------------- Efeito do link do menu -------------------*/
+    a:hover, a.active {
+        background    : none;
+        color         : #0082e6;
+    }
+
+    /*-------------------- Container ul lateral esquerda efeito click -------------------*/
+    #check:checked ~ ul {
+        /* right          : -20px; menu vindo da direita +A */
+        left          : 0px; /* menu vindo da esquerda +B */
+    }
+}
